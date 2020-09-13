@@ -186,12 +186,6 @@ limitations under the License.
                     <scope>provided</scope>
                 </dependency>
                 <dependency>
-                    <groupId>org.checkerframework</groupId>
-                    <artifactId>jdk8</artifactId>
-                    <version>${checkerframework.version}</version>
-                    <scope>provided</scope>
-                </dependency>
-                <dependency>
                     <groupId>com.google.errorprone</groupId>
                     <artifactId>javac</artifactId>
                     <version>${error-prone.version}</version>
@@ -230,7 +224,6 @@ limitations under the License.
                                     </annotationProcessors>
                                     <compilerArgs>
                                         <arg>-J-Xbootclasspath/p:${com.google.errorprone:javac:jar}</arg>
-                                        <arg>-Xbootclasspath/p:${org.checkerframework:jdk8:jar}</arg>
 <!--                                        <arg>-AskipUses=^com\.google</arg>-->
                                         <arg>-AonlyDefs=^de\.learnlib</arg>
                                         <arg>-AskipUses=.*</arg>
@@ -257,7 +250,6 @@ limitations under the License.
                                     </annotationProcessors>
                                     <compilerArgs>
                                         <arg>-J-Xbootclasspath/p:${com.google.errorprone:javac:jar}</arg>
-                                        <arg>-Xbootclasspath/p:${org.checkerframework:jdk8:jar}</arg>
                                         <arg>-AonlyDefs=^de\.learnlib</arg>
                                         <arg>-AskipUses=.*</arg>
                                         <arg>-AsuppressWarnings=uninitialized</arg>
